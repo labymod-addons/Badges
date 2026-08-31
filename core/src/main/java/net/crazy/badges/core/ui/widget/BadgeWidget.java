@@ -32,7 +32,9 @@ public class BadgeWidget extends SimpleWidget {
     ComponentWidget title = ComponentWidget.text(this.readableTitle(this.title));
     title.addId("badge-title");
 
-    this.setHoverComponent(Component.text(this.description));
+    this.setHoverComponent(this.description == null || this.description.isEmpty()
+        ? Component.translatable("badges.badge.noDescription")
+        : Component.text(this.description));
     this.addChild(title);
   }
 

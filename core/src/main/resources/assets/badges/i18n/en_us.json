@@ -1,5 +1,8 @@
 {
   "badges": {
+    "badge": {
+      "noDescription": "No description available"
+    },
     "settings": {
       "name": "Badges",
       "enabled": {
